@@ -25,9 +25,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {data.map (character => (<Characters character={character}/>))}
+      {data.map ((character, index )=> (<Characters key={index} character={character}/>))}
     </div>
   );
 }
-
+ 
 export default App;

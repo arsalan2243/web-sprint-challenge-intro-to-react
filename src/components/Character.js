@@ -1,6 +1,7 @@
 // Write your Character component here
-import react  from 'react'
+import react, {useState}  from 'react'
 import styled from 'styled-components'
+import Details from './details'
 
 const Div = styled.div`
 background-color: rgb(0, 0, 0 ,0.5);;
@@ -18,11 +19,16 @@ max-width: 100%;
 
 const Characters = (props) => {
     const character = props.character
+    const [use, setUse]= useState(false);
+    
     return (
-        <Div>
+       <div>
+            <Div onClick={()=> setUse(!use)}>
             <h2>{character.name}</h2>
             <h2>{character.birth_year}</h2>
         </Div>
+        {use? <Details details={character}/> : null}
+       </div>
     )
 }
 
