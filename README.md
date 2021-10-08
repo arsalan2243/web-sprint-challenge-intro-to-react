@@ -79,6 +79,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+react is an open source framework that was created by facebook which gave the ability for the development of reusable UI. It uses small pieces to create large applications. react create a virtual DOM and when the data changes by the user, react will compare the changes in virutal DOM to the DOM and it will only upadate those pieces that are subjected to change.
+
 1. Describe component state.
+
+componenet state has 2 premeters, value and a function that can set the value. the ability to upadate the value by interaction comes from this.
+
 1. Describe props.
+
+properties that are similar to function premeters. when a key:value object is passed to the chlidren from parents, props would act as the property of the children.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+things that exist outisde of the function, but will affect it, when function executes. they can cause state to return a differt output than what is specified. react can help to maanage these side effects, using side effect hook. the side effect second argument (dependency) allows us to control the effect.
